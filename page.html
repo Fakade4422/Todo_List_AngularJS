@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+
+    <!-- Supporting links for project -->
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=nest_farsight_dual" />
+</head>
+<body>
+    <div class="content">
+        <h1>TODO LIST</h1>
+        <div class="task">
+            <span class="title">1. Make Bread</span>
+            <span class="difficulty">Easy</span>
+            <span class="delete">
+                <button class="delete-btn" type="button">x</button>
+            </span>
+        </div>
+
+        <div class="task">
+            <span class="title">2. Creating Project for To do List</span>
+            <span class="difficulty">Easy</span>
+            <span class="delete">
+                <button class="delete-btn" type="button">x</button>
+            </span>
+        </div>
+
+        <div class="task">
+            <span class="title">3. Read all analyzing books</span>
+            <span class="difficulty">Easy</span>
+            <span class="delete">
+                <button class="delete-btn" type="button">x</button>
+            </span>
+        </div>
+
+        <div class="task">
+            <span class="title" style="font-style: italic; text-align: center; width: 100%;">There are no tasks to display</span>
+        </div>
+
+        <div class="form-container">
+            <h2>Add New Task</h2>
+
+            <form action="" method="post">
+                <input id="taskInput" type="text" name="task" placeholder="Enter your task">
+                <div class="modeContent">
+                    <span style="font-weight: bold; margin-right: 10px;">Choose the Mode: </span>
+                    <input class="mode_radio" id="radEasy" type="radio" ng-model="selectedMode" value="Easy">
+                    <label for="radEasy">Easy</label>
+                    <input class="mode_radio" id="radMedium" type="radio" ng-model="selectedMode" value="Medium">
+                    <label for="radMedium">Medium</label>
+                    <input class="mode_radio" id="radHard" type="radio" ng-model="selectedMode" value="Hard">
+                    <label for="radHard">Hard</label><br><br>
+                </div>
+                
+                <input id="submitBtn" type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
