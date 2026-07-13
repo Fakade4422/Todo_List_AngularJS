@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+
+    /* Font settings */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cfcfcf;
+}
+.content{
+    padding: 20px;
+    width: 480px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.task{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.task:hover{
+    background-color: rgb(238, 238, 238);
+    scale: 1.01;
+}
+
+
+.title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-wrap: wrap;
+}
+.difficulty{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+.delete{
+    padding: 8px 8px;
+    border-radius: 55%;
+    background-color: rgb(255, 0, 0);
+}
+.delete-btn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#taskInput{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.modeContent{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+.mode_radio{
+    margin-right: 5px;
+}
+
+label{
+    margin-right: 5px;
+}
+
+#submitBtn{
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 112, 218);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#submitBtn:hover{
+    background-color: rgb(0, 90, 173);
+    scale: 1.01;
+}
