@@ -1,0 +1,27 @@
+<div class="form-container border shadow">
+    <h2>Add New Task</h2>
+
+    <form ng-submit="addTask()" name="taskForm">
+        <input ng-model="newTask.title" class="taskInput form-control" type="text" name="task" placeholder="Enter your task" required>
+
+        <div class="modeContent">
+            <span style="font-weight: bold; margin-right: 10px;">Choose the Mode: </span>
+            
+            <span>
+                <input ng-model="newTask.difficulty" id="radEasy" type="radio" value="Easy">
+                <label for="radEasy">Easy</label>
+            </span>
+            <span>
+                <input ng-model="newTask.difficulty" id="radMedium" type="radio" value="Medium">
+                <label for="radMedium">Medium</label>
+            </span>
+            <span>
+                <input ng-model="newTask.difficulty" id="radHard" type="radio" value="Hard">
+                <label for="radHard">Hard</label>
+            </span>
+
+        </div>
+                
+        <input class="submitBtn mt-2" type="submit" value="Add New Task">
+    </form>
+</div>

@@ -1,0 +1,15 @@
+<div ng-repeat="task in tasks" class="task row mx-0 mb-2 mt-0 p-3">
+    <div class="col-8 m-0 p-0">
+        <span class="title">{{$index + 1}}. {{task.title}}</span>
+    </div>
+    <div class="col-3 m-0 p-0">
+        <span ng-if="task.difficulty == 'Hard'" style="background-color: rgb(218, 0, 0); " class="difficulty">{{task.difficulty}}</span>
+        <span ng-if="task.difficulty == 'Medium'" style="background-color: rgb(218, 185, 0);" class="difficulty">{{task.difficulty}}</span>
+        <span ng-if="task.difficulty == 'Easy'" style="background-color: rgb(98, 218, 0);" class="difficulty">{{task.difficulty}}</span>
+    </div>
+    <div class="col-1 m-0 p-0">
+        <span class="delete">
+        <button ng-click="deleteTask(task)" class="delete-btn" type="button">x</button>
+    </span>
+    </div>         
+</div>
