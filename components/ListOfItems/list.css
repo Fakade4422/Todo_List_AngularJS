@@ -1,0 +1,57 @@
+.content{
+    padding: 20px;
+    width: 480px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.task{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+}
+.task:hover{
+    background-color: rgb(238, 238, 238);
+    scale: 1.01;
+}
+
+
+.title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-wrap: wrap;
+}
+.difficulty{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 12px;
+    
+    
+    
+    color: white;
+}
+.delete{
+    padding: 8px 8px;
+    border-radius: 55%;
+    background-color: rgb(255, 0, 0);
+}
+.delete-btn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
